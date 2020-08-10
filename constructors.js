@@ -143,7 +143,7 @@ function Employee(name, email, hireDate) {
   //   })
   // }
 
-//Jasmine: keep getting undefinded, Repl: keep getting an unexpected token
+//Jasmine: keeps getting undefinded, Repl: keep getting an unexpected token
 
   // User.prototype.changePostRating = function(search, newRating){
   //   this.savedPosts.forEach(function(post){
@@ -154,13 +154,13 @@ function Employee(name, email, hireDate) {
   //   })
   // }
 
-  // User.prototype.changePostRating = function(id, newRating){
-  //   for(i = 0; i< this.savedPosts.length; i++){
-  //     if(this.savedPosts[i].id === id){
-  //       this.savedPosts[i].rating = newRating
-  //     }
-  //   }
-  // }
+  User.prototype.changePostRating = function(id, newRating){
+    for(i = 0; i< this.savedPosts.length; i++){
+      if(this.savedPosts[i].id === id){
+        this.savedPosts[i].rating = newRating
+      }
+    }
+  }
 
   // User.prototype.changePostRating = function(num, newRating){
   //   let obj = this.savedPosts.findIndex(el => el.id === num);
